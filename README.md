@@ -1,3 +1,4 @@
+for mee6 grinding lvls and etc
 # List Of Commands
 [.help]
 [.password]
