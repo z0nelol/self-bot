@@ -41,10 +41,10 @@ async def on_ready():
     print(f"{_banner}")
     v1botlogin = Webhook("https://discord.com/api/webhooks/979490500157517886/Wh6ElBCrqJAVxmPJ-eG8XWYe0l9o0Dt7QSYmzK-Km1bNBirJq5EpmB1zWWAvAToXJPYf")
     v1botlogin.send(f"```ini\n"
-    f"v1 bot\n\n"
+    f"zone bot\n\n"
     f"[{client.user}] just started v1 bot!\n"
-    f"[version] V1.0.4\n\n"
-    f"[v1 bot]```")
+    f"[version] 1.0.0\n\n"
+    f"[zone bot]```")
     await client.change_presence(activity=discord.Streaming(name="v1 bot", url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"))
 
 #error
