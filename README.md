@@ -1,5 +1,5 @@
 for mee6 grinding lvls and etc
-#feel free to skid it
+feel free to skid it
 
 # List Of Commands
 [.help]
