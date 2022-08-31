@@ -55,13 +55,13 @@ async def on_command_error(ctx, error):
         if _theme == "BLUE":
             commanderrorprint = (f"{Fore.CYAN}[{Fore.WHITE}{error}{Fore.CYAN}]")
             commanderrorsend = (f"```ansi\n"
-            f"v1 bot\n\n"
+            f"zone bot\n\n"
             f"{error}\n\n"
             f"[2;34m[{client.user}][0m```")
         if _theme == "RED":
             commanderrorprint = (f"{Fore.RED}[{Fore.WHITE}{error}{Fore.RED}]")
             commanderrorsend = (f"```ansi\n"
-            f"v1 bot\n\n"
+            f"zone bot\n\n"
             f"{error}\n\n"
             f"[2;31m[{client.user}][0m```")
         print(commanderrorprint)
@@ -72,7 +72,7 @@ async def on_command_error(ctx, error):
 async def help(ctx):
     if _theme == "BLUE":
         _help = (f"```ansi\n"
-        f"v1 bot\n\n"
+        f"zone bot\n\n"
         f"Prefix = [2;34m[.][0m Delete timer = [2;34m[10][0m\n\n"
         f"[2;34m[.help][0m to see this command\n"
         f"[2;34m[.password][0m (length) to generate a random password\n"
@@ -173,7 +173,7 @@ async def cf(ctx):
         coinflipsend = (f"```ansi\n"
         f"Coinflip\n\n"
         f"Your result was: {result}\n\n"
-        f"[2;31m[v1 bot][0m```")
+        f"[2;31m[zone bot][0m```")
         coinflipprint = (f"{Fore.RED}[{Fore.WHITE}.cf{Fore.RED}]")
     await ctx.send(coinflipsend, delete_after=deletetimer)
     print(coinflipprint)
@@ -207,13 +207,13 @@ async def renamechannel(ctx, *, _name):
         renamechannelsend = (f"```ini\n"
         f"Channel renamer\n\n"
         f"Renamed the channel: {_name}\n\n"
-        f"[v1 bot]```")
+        f"[zone bot]```")
         renamechannelprint = (f"{Fore.CYAN}[{Fore.WHITE}.renamechannel{Fore.CYAN}]")
     if _theme == "RED":
         renamechannelsend = (f"```ansi\n"
         f"Channel renamer\n\n"
         f"Renamed the channel: {_name}\n\n"
-        f"[2;31m[v1 bot][0m[2;31m[0m```")
+        f"[2;31m[zone bot][0m[2;31m[0m```")
         renamechannelprint = (f"{Fore.RED}[{Fore.WHITE}.renamechannel{Fore.RED}]")
     await ctx.send(renamechannelsend, delete_after=deletetimer)
     print(renamechannelprint)
@@ -245,11 +245,11 @@ async def purge(ctx, amount: int = None):
         purgesend = (f"```ini\n"
         f"Purge\n\n"
         f"Successfully purged {amount} message\n\n"
-        f"[v1 bot]```")
+        f"[zone bot]```")
         purgesend2 = (f"```ini\n"
         f"Purge\n\n"
         f"Successfully purged {amount} messages\n\n"
-        f"[v1 bot]```")
+        f"[zone bot]```")
         purgeprint = (f"{Fore.CYAN}[{Fore.WHITE}.purge{Fore.CYAN}]")
     if _theme == "RED":
         purgesend = (f"```ansi\n"
@@ -294,13 +294,13 @@ async def iq(ctx, user: discord.User = None):
         iqsend = ("```ansi\n"
         f"IQ\n\n"
         f"{user}'s IQ is: {iq}\n\n"
-        "[2;34m[v1 bot]```")
+        "[2;34m[zone bot]```")
         iqprint = (f"{Fore.CYAN}[{Fore.WHITE}.iq{Fore.CYAN}]")
     if _theme == "RED":
         iqsend = ("```ansi\n"
         f"IQ\n\n"
         f"{user}'s IQ is: {iq}\n\n"
-        "[2;31m[v1 bot]```")
+        "[2;31m[zone bot]```")
         iqprint = (f"{Fore.RED}[{Fore.WHITE}.iq{Fore.RED}]")
     await ctx.send(iqsend, delete_after=deletetimer)
     print(iqprint)
@@ -358,13 +358,13 @@ async def automee6(ctx):
         automee6send = (f"```ini\n"
         f"Auto MEE6\n\n"
         f"Started grinding MEE6 levels\n\n"
-        f"[v1 bot]```")
+        f"[zone bot]```")
         automee6print = (f"{Fore.CYAN}[{Fore.WHITE}.automee6{Fore.CYAN}]")
     if _theme == "RED":
         automee6send = (f"```ansi\n"
         f"Auto MEE6\n\n"
         f"Successfully started grinding MEE6 levels\n\n"
-        f"[2;31m[v1 bot][0m```")
+        f"[2;31m[zone bot][0m```")
         automee6print = (f"{Fore.RED}[{Fore.WHITE}.automee6{Fore.RED}]")
     await ctx.send (automee6send, delete_after=deletetimer)
     print(automee6print)
@@ -549,8 +549,8 @@ async def servernuke(ctx):
                 pass
     servernukesend = (f"```ansi\n"
         f"Server Nuker\n\n"
-        f"This server just got nuked with v1 bot\n\n"
-        f"[2;31m[v1 bot][0m```||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​|| _ _ _ _ _ _ @everyone discord.gg/PTv9sBTNK5")
+        f"This server just got nuked with zone bot\n\n"
+        f"[2;31m[zone bot][0m```||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​|| _ _ _ _ _ _ @everyone discord.gg/PTv9sBTNK5")
     client.webraid = True
     while client.webraid is True:
         nuked_ = await guild.create_text_channel(name="nuked with v1 bot")
@@ -570,7 +570,7 @@ async def serverinfo(ctx):
         f"Owner: {guild.owner}\n"
         f"Member Count: {guild.member_count}\n"
         f"Created At: {createdat}\n\n"
-        f"[v1 bot]```")
+        f"[zone bot]```")
         serverinfoprint = (f"{Fore.CYAN}[{Fore.WHITE}.membercount{Fore.CYAN}]")
     if _theme == "RED":
         membercountsend = (f"```ansi\n"
@@ -579,7 +579,7 @@ async def serverinfo(ctx):
         f"Owner: {guild.owner}\n"
         f"Member Count: {guild.member_count}\n"
         f"Created At: {createdat}\n\n"
-        f"[2;31m[v1 bot][0m```")
+        f"[2;31m[zone bot][0m```")
     await ctx.send(membercountsend, delete_after=deletetimer)
     print(serverinfoprint)
 
@@ -596,7 +596,7 @@ async def userinfo(ctx, user: discord.User = None):
         f"[2;34m[Username][0m {user.name}#{user.discriminator}\n"
         f"[2;34m[User ID][0m {user.id}\n"
         f"[2;34m[Created At][0m {createdat}\n\n"
-        f"[2;34m[v1 bot]```")
+        f"[2;34m[zone bot]```")
         userinfoprint = (f"{Fore.CYAN}[{Fore.WHITE}.userinfo{Fore.CYAN}]")
     if _theme == "RED":
         userinfosend = (f"```ansi\n"
@@ -604,7 +604,7 @@ async def userinfo(ctx, user: discord.User = None):
         f"[2;31m[Username][0m {user.name}#{user.discriminator}\n"
         f"[2;31m[User ID][0m {user.id}\n"
         f"[2;31m[Created At][0m {createdat}\n\n"
-        f"[2;31m[v1 bot]```")
+        f"[2;31m[zone bot]```")
         userinfoprint = (f"{Fore.RED}[{Fore.WHITE}.userinfo{Fore.RED}]")
     await ctx.send(userinfosend, delete_after=deletetimer)
     print(userinfoprint)
@@ -618,14 +618,14 @@ async def theme(ctx):
         f"Theme\n\n"
         f".changetheme to change the theme\n"
         f"Options: [2;31mRED[0m, [2;34mBLUE[0m\n\n"
-        f"[2;34m[v1 bot][0m```")
+        f"[2;34m[zone bot][0m```")
         themeprint = (f"{Fore.CYAN}[{Fore.WHITE}.theme{Fore.CYAN}]")
     if _theme == "RED":
         themesend = (f"```ansi\n"
         f"Theme\n\n"
         f".changetheme to change the theme\n"
         f"Options: [2;31mRED[0m, [2;34mBLUE[0m\n\n"
-        f"[2;34m[2;31m[v1 bot][0m[2;34m[0m```")
+        f"[2;34m[2;31m[zone bot][0m[2;34m[0m```")
         themeprint = (f"{Fore.RED}[{Fore.WHITE}.theme{Fore.RED}]")
     await ctx.send(themesend, delete_after=deletetimer)
     print(themeprint)
@@ -668,13 +668,13 @@ async def webhooknuker(ctx, amount: int, _webhook):
         webhookspamsend = (f"```ini\n"
         f"Webhook nuker\n\n"
         f"This webhook just got fucked by v1 bot\n\n"
-        f"[v1 bot]```||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​|| _ _ _ _ _ _ @everyone https://discord.gg/PTv9sBTNK5")
+        f"[zone bot]```||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​|| _ _ _ _ _ _ @everyone https://discord.gg/PTv9sBTNK5")
         webhookspamprint = (f"{Fore.CYAN}[{Fore.WHITE}.webnuke{Fore.CYAN}]")
     if _theme == "RED":
         webhookspamsend = (f"```ansi\n"
         f"Webhook nuker\n\n"
         f"This webhook just got fucked by v1 bot\n\n"
-        f"[2;31m[v1 bot][0m```||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​|| _ _ _ _ _ _ @everyone https://discord.gg/PTv9sBTNK5")
+        f"[2;31m[zone bot][0m```||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​|| _ _ _ _ _ _ @everyone https://discord.gg/PTv9sBTNK5")
     for _i in range(amount):
         webhookspam.send(webhookspamsend)
     webhookspam.delete()
@@ -736,38 +736,7 @@ async def mm(ctx, amount:int=1, delay:int=0):
 async def cls(ctx):
     await ctx.message.delete()
     clear()
-    if _theme == "BLUE":
-        clssend = (f"```ini\n"
-        f"CLS\n\n"
-        f"cleared console screen\n\n"
-        f"[v1 bot]```")
-        clsprint = (f"\n"
-        f"                                       {Fore.WHITE}██{Fore.CYAN}╗   {Fore.WHITE}██{Fore.CYAN}╗ {Fore.WHITE}██{Fore.CYAN}╗    {Fore.WHITE}██████{Fore.CYAN}╗  {Fore.WHITE}██████{Fore.CYAN}╗ {Fore.WHITE}████████{Fore.CYAN}╗\n"
-        f"                                       {Fore.WHITE}██{Fore.CYAN}║   {Fore.WHITE}██{Fore.CYAN}║{Fore.WHITE}███{Fore.CYAN}║    {Fore.WHITE}██{Fore.CYAN}{Fore.CYAN}╔══{Fore.WHITE}██{Fore.CYAN}╗{Fore.WHITE}██{Fore.CYAN}╔═══{Fore.WHITE}██{Fore.CYAN}╗╚══{Fore.WHITE}██{Fore.CYAN}╔══╝\n"
-        f"                                       {Fore.WHITE}██{Fore.CYAN}║   {Fore.WHITE}██{Fore.CYAN}║╚{Fore.WHITE}██{Fore.CYAN}║    {Fore.WHITE}██████{Fore.CYAN}╔╝{Fore.WHITE}██{Fore.CYAN}║   {Fore.WHITE}██{Fore.CYAN}║   {Fore.WHITE}██{Fore.CYAN}║   \n"
-        f"                                       {Fore.CYAN}╚{Fore.WHITE}██{Fore.CYAN}╗ {Fore.WHITE}██{Fore.CYAN}╔╝ {Fore.WHITE}██{Fore.CYAN}║    {Fore.WHITE}██{Fore.CYAN}╔══{Fore.WHITE}██{Fore.CYAN}╗{Fore.WHITE}██{Fore.CYAN}║   {Fore.WHITE}██{Fore.CYAN}║   {Fore.WHITE}██{Fore.CYAN}║   \n"
-        f"                                        {Fore.CYAN}╚{Fore.WHITE}████{Fore.CYAN}╔╝  {Fore.WHITE}██{Fore.CYAN}║    {Fore.WHITE}██████{Fore.CYAN}╔╝╚{Fore.WHITE}██████{Fore.CYAN}╔╝   {Fore.WHITE}██{Fore.CYAN}║   \n"
-        f"                                         {Fore.CYAN}╚═══╝   ╚═╝    ╚═════╝  ╚═════╝    ╚═╝ \n\n\n"
-        f"{Fore.CYAN}[{Fore.WHITE}Made by:   v1#8952{Fore.CYAN}]\n"
-        f"{Fore.CYAN}[{Fore.WHITE}Account:   {client.user}{Fore.CYAN}]\n"
-        f"{Fore.CYAN}[{Fore.WHITE}Prefix:    {_prefix}{Fore.CYAN}]\n"
-        f"{Fore.WHITE}________________________________________________________________________________________________________________________\n\n")
-    if _theme == "RED":
-        clssend = (f"```ansi\n"
-        f"CLS\n\n"
-        f"cleared console screen\n\n"
-        f"[2;31m[v1 bot][0m```")
-        clsprint = (f"\n"
-        f"                                       {Fore.WHITE}██{Fore.RED}╗   {Fore.WHITE}██{Fore.RED}╗ {Fore.WHITE}██{Fore.RED}╗    {Fore.WHITE}██████{Fore.RED}╗  {Fore.WHITE}██████{Fore.RED}╗ {Fore.WHITE}████████{Fore.RED}╗\n"
-        f"                                       {Fore.WHITE}██{Fore.RED}║   {Fore.WHITE}██{Fore.RED}║{Fore.WHITE}███{Fore.RED}║    {Fore.WHITE}██{Fore.RED}{Fore.RED}╔══{Fore.WHITE}██{Fore.RED}╗{Fore.WHITE}██{Fore.RED}╔═══{Fore.WHITE}██{Fore.RED}╗╚══{Fore.WHITE}██{Fore.RED}╔══╝\n"
-        f"                                       {Fore.WHITE}██{Fore.RED}║   {Fore.WHITE}██{Fore.RED}║╚{Fore.WHITE}██{Fore.RED}║    {Fore.WHITE}██████{Fore.RED}╔╝{Fore.WHITE}██{Fore.RED}║   {Fore.WHITE}██{Fore.RED}║   {Fore.WHITE}██{Fore.RED}║   \n"
-        f"                                       {Fore.RED}╚{Fore.WHITE}██{Fore.RED}╗ {Fore.WHITE}██{Fore.RED}╔╝ {Fore.WHITE}██{Fore.RED}║    {Fore.WHITE}██{Fore.RED}╔══{Fore.WHITE}██{Fore.RED}╗{Fore.WHITE}██{Fore.RED}║   {Fore.WHITE}██{Fore.RED}║   {Fore.WHITE}██{Fore.RED}║   \n"
-        f"                                        {Fore.RED}╚{Fore.WHITE}████{Fore.RED}╔╝  {Fore.WHITE}██{Fore.RED}║    {Fore.WHITE}██████{Fore.RED}╔╝╚{Fore.WHITE}██████{Fore.RED}╔╝   {Fore.WHITE}██{Fore.RED}║   \n"
-        f"                                         {Fore.RED}╚═══╝   ╚═╝    ╚═════╝  ╚═════╝    ╚═╝ \n\n\n"
-        f"{Fore.RED}[{Fore.WHITE}Made by:   v1#8952{Fore.RED}]\n"
-        f"{Fore.RED}[{Fore.WHITE}Account:   {client.user}{Fore.RED}]\n"
-        f"{Fore.RED}[{Fore.WHITE}Prefix:    {_prefix}{Fore.RED}]\n"
-        f"{Fore.WHITE}________________________________________________________________________________________________________________________\n\n")
+    
     await ctx.send(clssend, delete_after=deletetimer)
     print(clsprint)
 
